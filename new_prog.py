@@ -10,5 +10,5 @@ sub_socket.setsockopt_string(zmq.SUBSCRIBE, "")
 count = 0
 while True:
     msg = sub_socket.recv_string()
-    print(f"*** - {msg}")
+    print(f"{msg}")
     count += 1
